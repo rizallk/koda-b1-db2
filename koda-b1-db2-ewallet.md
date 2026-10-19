@@ -9,7 +9,7 @@ erDiagram
     date created_at
     date updated_at
   }
-  HISTORY {
+  AUDIT_LOG {
     int id PK
     int user_id FK
     int balance
@@ -19,6 +19,8 @@ erDiagram
     int id PK
     int user_id FK
     int product_id FK
+    int qty
+    int sub_total
     string trx_number
     date created_at
   }
